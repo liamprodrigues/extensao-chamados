@@ -1,0 +1,51 @@
+
+.container{
+  width:360px;
+  padding:16px;
+}
+
+input,textarea,button{
+  width:100%;
+  box-sizing:border-box;
+  margin-bottom:10px;
+  border-radius:10px;
+  border:1px solid #ddd;
+  padding:10px;
+}
+
+textarea{
+  height:100px;
+}
+
+button{
+  border:0;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.registrar{
+  background:#2563eb;
+  color:white;
+}
+
+.p{
+  background:#facc15;
+}
+
+.a{
+  background:#38bdf8;
+  color:white;
+}
+
+.c{
+  background:#22c55e;
+  color:white;
+}
+
+.card{
+  background:white;
+  border-radius:12px;
+  padding:12px;
+  margin-top:10px;
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+}

@@ -1,0 +1,74 @@
+<div class="container">
+
+  <h2>Controle</h2>
+
+  <input
+    [(ngModel)]="usuario"
+    placeholder="Usuário"
+  >
+
+  <input
+    [(ngModel)]="computador"
+    placeholder="Computador"
+  >
+
+  <input
+    [(ngModel)]="titulo"
+    placeholder="Título"
+    [disabled]="!usuario || !computador"
+  >
+
+  <textarea
+    [(ngModel)]="observacao"
+    placeholder="Observações"
+    [disabled]="!usuario || !computador"
+  ></textarea>
+
+  <button
+    class="p"
+    (click)="salvar('PENDENTE')"
+    [disabled]="!usuario || !computador"
+  >
+    PENDENTE
+  </button>
+
+  <button
+    class="a"
+    (click)="salvar('EM ANDAMENTO')"
+    [disabled]="!usuario || !computador"
+  >
+    EM ANDAMENTO
+  </button>
+
+  <button
+    class="c"
+    (click)="salvar('CONCLUÍDO')"
+    [disabled]="!usuario || !computador"
+  >
+    CONCLUÍDO
+  </button>
+
+  @for (item of historico; track item.data) {
+
+    <div class="card">
+
+      <b>{{ item.titulo }}</b>
+
+      <p>{{ item.observacao }}</p>
+
+      <small>{{ item.status }}</small>
+      <br>
+
+      <small>{{ item.usuario }}</small>
+      <br>
+
+      <small>{{ item.computador }}</small>
+      <br>
+
+      <small>{{ item.data }}</small>
+
+    </div>
+
+  }
+
+</div>

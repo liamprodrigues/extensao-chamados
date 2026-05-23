@@ -1,0 +1,22 @@
+
+COMANDOS:
+
+node -v
+npm -v
+ng version
+
+RODAR:
+
+npm install
+npx ng serve
+
+BUILD:
+
+npx ng build
+
+EXTENSÃO:
+
+chrome://extensions
+-> modo desenvolvedor
+-> carregar sem compactação
+-> dist/extensao-angular
